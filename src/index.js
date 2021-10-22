@@ -10,7 +10,7 @@ if ((!+firstBoundary || !+secondBoundary) || (+firstBoundary <= 1) || (+firstBou
     return;
 }
 
-// Фильтрация 
+// Фильтрация чисел и отбор простых
 nextNumber: for (let i = +firstBoundary; i <= +secondBoundary; i++) {
     for (let j = 2; j < i; j++) {
         if (i % j == 0 ) continue nextNumber;
